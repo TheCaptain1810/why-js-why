@@ -9,7 +9,9 @@ class Person {
   }
   
   class Action extends Person {
-   construtor() {}
+   constructor(name: string, age: number) {
+    super(name, age);
+   }
   
    public speaks() {
     console.log(`${this.name} is speaking! Please shut up. Also don't forget that his fav programming lang is ${this.lang}`);
